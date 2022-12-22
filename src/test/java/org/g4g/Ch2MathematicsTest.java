@@ -21,4 +21,13 @@ class Ch2MathematicsTest {
         assertEquals(0, Ch2Mathematics.gcd(-1, 10));
         assertEquals(0, Ch2Mathematics.gcd(-1, -2));
     }
+
+    @Test
+    void testLcm() {
+        assertEquals(12, Ch2Mathematics.lcm(4,6));
+        assertEquals(8, Ch2Mathematics.lcm(4,8));
+        assertEquals(77, Ch2Mathematics.lcm(7,11));
+        assertEquals(0, Ch2Mathematics.lcm(-1, -2));
+
+    }
 }

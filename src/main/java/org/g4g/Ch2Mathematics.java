@@ -17,4 +17,11 @@ public class Ch2Mathematics {
         if(j == 0) return i;
         else return gcd(j, i%j);
     }
+
+    // LCM
+    public static int lcm(int i, int j){
+        if(i < 0 || j < 0) return 0;
+        // LCM = (i * j)/gcd(i,j)
+        return (i*j) / gcd(i, j); // Complexity = log(min(i,j))
+    }
 }
