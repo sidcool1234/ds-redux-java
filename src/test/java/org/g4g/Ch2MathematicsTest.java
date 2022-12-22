@@ -7,9 +7,18 @@ import static org.junit.jupiter.api.Assertions.*;
 class Ch2MathematicsTest {
 
     @Test
-    void numberOfDigitsIn() {
+    void testNumberOfDigitsIn() {
         assertEquals(3, Ch2Mathematics.numberOfDigitsIn(123));
         assertEquals(2, Ch2Mathematics.numberOfDigitsIn(12));
         assertNotEquals(10, Ch2Mathematics.numberOfDigitsIn(123456789));
+    }
+
+    @Test
+    void testGcd() {
+        assertEquals(5, Ch2Mathematics.gcd(15, 10));
+        assertEquals(1, Ch2Mathematics.gcd(9, 10));
+        assertEquals(10, Ch2Mathematics.gcd(0, 10));
+        assertEquals(0, Ch2Mathematics.gcd(-1, 10));
+        assertEquals(0, Ch2Mathematics.gcd(-1, -2));
     }
 }
